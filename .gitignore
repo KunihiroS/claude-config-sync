@@ -1,0 +1,10 @@
+# Local Claude Code state (auto-generated, should not be shared)
+.claude/
+
+# Python
+__pycache__/
+*.pyc
+
+# OS
+.DS_Store
+Thumbs.db
