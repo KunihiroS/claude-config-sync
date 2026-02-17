@@ -1,6 +1,6 @@
 # claude-config-sync
 
-![説明画像](assets/Gemini_Generated_Image_gmzxi7gmzxi7gmzx.png)
+![説明画像](assets/Gemini_Generated_Image_gmzxi7gmzxi7gmzx.jpg)
 
 Share Claude Code settings, commands, and skills across multiple machines (Linux, macOS) using Git and symlinks.
 
