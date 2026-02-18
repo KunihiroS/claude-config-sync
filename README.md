@@ -1,6 +1,11 @@
 # claude-config-sync
 
 ![説明画像](assets/Gemini_Generated_Image_gmzxi7gmzxi7gmzx.jpg)
+```
+👄 Hey AI, I have got new skills. Sync them!!
+🤖 Pi-...Gagaga... OKANOSHITA(Confirmed). Will thim synced.  (Sync done!
+👄 Cool !!
+```
 
 Share Claude Code settings, commands, and skills across multiple machines (Linux, macOS) using Git and symlinks.
 
