@@ -168,12 +168,22 @@ for cmd_file in "$REPO_DIR/claude/commands"/*.md; do
 done
 
 echo ""
-echo "--- Linking skills ---"
+echo "--- Linking skills for Claude Code ---"
 mkdir -p "$CLAUDE_DIR/skills"
 for skill_dir in "$REPO_DIR/skills"/*/; do
     [ -d "$skill_dir" ] || continue
     skill_name="$(basename "$skill_dir")"
     create_link "$skill_dir" "$CLAUDE_DIR/skills/$skill_name"
+done
+
+echo ""
+echo "--- Linking skills for Alternative Agents ---"
+AGENT_DIR="$HOME/.agents"
+mkdir -p "$AGENT_DIR/skills"
+for skill_dir in "$REPO_DIR/skills"/*/; do
+    [ -d "$skill_dir" ] || continue
+    skill_name="$(basename "$skill_dir")"
+    create_link "$skill_dir" "$AGENT_DIR/skills/$skill_name"
 done
 
 echo ""
@@ -184,4 +194,5 @@ echo " Verify with:"
 echo "   ls -la $CLAUDE_DIR/settings.json"
 echo "   ls -la $CLAUDE_DIR/commands/"
 echo "   ls -la $CLAUDE_DIR/skills/"
+echo "   ls -la $HOME/.agents/skills/"
 echo "========================================"
