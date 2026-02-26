@@ -9,8 +9,9 @@ Check it out!
 💻 Sync done!
 👄 Cool!
 ```
-
 Share Claude Code settings, commands, and skills across multiple machines (Linux, macOS) using Git and symlinks.
+
+**Now skills sync also in ~/.agents/skills/ as well!!**
 
 ## How It Works
 
