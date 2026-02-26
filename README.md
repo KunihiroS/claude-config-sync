@@ -14,7 +14,7 @@ Share Claude Code settings, commands, and skills across multiple machines (Linux
 
 ## How It Works
 
-Files in this repository are symlinked into `~/.claude/`. When Claude Code modifies a setting, the change is written directly to the repo — just commit and push to propagate it to other machines.
+Files in this repository are symlinked into `~/.claude/` and `~/.agents/skills/`. When an agent modifies a setting, the change is written directly to the repo — just commit and push to propagate it to other machines.
 
 ```
 ┌─────────────────────────────────┐
@@ -29,6 +29,7 @@ Files in this repository are symlinked into `~/.claude/`. When Claude Code modif
 │  │   └── commands/*.md         ─┼──→ ~/.claude/commands/*.md (per-file links)
 │  └── skills/                    │
 │      └── sync-config/          ─┼──→ ~/.claude/skills/sync-config
+│                                 └──→ ~/.agents/skills/sync-config
 └─────────────────────────────────┘
 ```
 
